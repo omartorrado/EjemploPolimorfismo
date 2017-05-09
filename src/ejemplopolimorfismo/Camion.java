@@ -37,6 +37,6 @@ public class Camion extends Vehiculo{
     }
     
     public String getVisualizar(){
-        return "Coche -> Matricula: "+super.getMatricula()+", Marca: "+super.getMarca()+", Potencia: "+super.getPotencia()+", Remolque: "+remolque;
+        return "Camion -> Matricula: "+super.getMatricula()+", Marca: "+super.getMarca()+", Potencia: "+super.getPotencia()+", Remolque: "+remolque;
     }
 }

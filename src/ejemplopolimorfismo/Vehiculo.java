@@ -9,7 +9,7 @@ package ejemplopolimorfismo;
  *
  * @author otorradomiguez
  */
-public abstract class Vehiculo {
+public abstract class Vehiculo implements Icalculable{
     
     private String matricula;
     private String marca;
@@ -43,10 +43,8 @@ public abstract class Vehiculo {
 
     public void setPotencia(int potencia) {
         this.potencia = potencia;
-    }
+    }   
         
-    public abstract float calcularPrecio();
-    
     public void visualizar(){
         System.out.println("Vehiculo -> Matricula: "+matricula+", Marca: "+marca+", Potencia: "+potencia);
     }

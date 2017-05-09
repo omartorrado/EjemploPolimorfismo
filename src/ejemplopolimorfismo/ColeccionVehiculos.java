@@ -44,7 +44,7 @@ public class ColeccionVehiculos {
         Iterator it=listaVehiculos.iterator();
         while(it.hasNext()){
             //Lo casteamos como vehiculo para que nos permita acceder a los metodos
-            //sino lo considerario un objeto y solo dejaria usar los metodos de objeto
+            //sino lo consideraria un objeto y solo dejaria usar los metodos de objeto
             Vehiculo v=(Vehiculo)it.next();
             v.visualizar();
         }

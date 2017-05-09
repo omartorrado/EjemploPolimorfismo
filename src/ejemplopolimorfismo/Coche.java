@@ -17,10 +17,19 @@ public class Coche extends Vehiculo{
         super(matricula, marca, potencia);
         this.numPuertas = numPuertas;
     }
+    
+    public int getNumPuertas(){
+        return numPuertas;
+    }
         
     @Override
-    public float calcularPrecio() {
-        return 95*super.getPotencia();
+    public float calcularPrecio() {        
+        //return 95*super.getPotencia();
+        /*No entiendo pq se hace esto en lugar de sobreescribir el metodo
+        Usamos una lambda expresion para en cierta manera definir calcular precio
+        y luego lo devolvemos...*/
+        Icalculable ic=()->95*super.getPotencia();
+        return ic.calcularPrecio();
     }
 
     @Override
